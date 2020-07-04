@@ -21,9 +21,5 @@ else
     echo "CMakeLists.txt does not exist"
     echo "$file"   
 fi  
-  
-  
-~                                                                                                    
-~                                                                                                    
-~                                                                                                    
-~                 
+
+#All fine, watch out for ~ symbol in script!  
