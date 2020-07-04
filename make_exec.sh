@@ -11,8 +11,8 @@ else
     exit 9999 # die with error code 9999
 fi
 
-add="/CMakeLists.txt"
-file="$current_dest$add"
+add="CMakeLists.txt"
+file="$current_path/$add"
 
 if [ -e "$file" ]; then
     echo "CMakeLists.txt exists"
