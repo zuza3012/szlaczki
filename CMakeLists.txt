@@ -1,6 +1,7 @@
 #Minimal OpenCL CMakeLists.txt by StreamHPC
 cmake_minimum_required (VERSION 3.1)
-project(testy)
+project(test)
+set(CMAKE_CXX_FLAGS -std=c++0x)
 find_package(OpenCL REQUIRED)
 include_directories()
 link_directories()

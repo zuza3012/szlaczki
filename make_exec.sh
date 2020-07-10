@@ -22,7 +22,8 @@ else
 
 	echo "#Minimal OpenCL CMakeLists.txt by StreamHPC" > $file
 	echo "cmake_minimum_required (VERSION 3.1)" >> $file
-	echo "project($project_name)" >> $file 
+	echo "project($project_name)" >> $file
+	echo "set(CMAKE_CXX_FLAGS "-std=c++0x")" >> $file 	
 	# Handle OpenCL
 	echo "find_package(OpenCL REQUIRED)" >> $file 
    	echo "include_directories(${OpenCL_INCLUDE_DIRS})" >> $file 
