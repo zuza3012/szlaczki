@@ -18,23 +18,18 @@ file="$current_path$add"
 if [ -e "$file" ]; then
 	echo "CMakeLists.txt exists"
 else 
-	echo "CMakeLists.txt does not exist"
-	touch $file
-     	
-	echo "    #Minimal OpenCL CMakeLists.txt by StreamHPC
+	echo "CMakeLists.txt does not exist! Create file: $file"
 
-   	 cmake_minimum_required (VERSION 3.1)
-
-   	 project($project_name)
-
-   	 # Handle OpenCL
-   	 find_package(OpenCL REQUIRED)
-   	 include_directories(${OpenCL_INCLUDE_DIRS})
-   	 link_directories(${OpenCL_LIBRARY})
-
-   	 add_executable ($exc_name main.cpp)
-   	 target_include_directories (main PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-   	 target_link_libraries (main ${OpenCL_LIBRARY})" > $file
+	echo "#Minimal OpenCL CMakeLists.txt by StreamHPC" > $file
+	echo "cmake_minimum_required (VERSION 3.1)" >> $file
+	echo "project($project_name)" >> $file 
+	# Handle OpenCL
+	echo "find_package(OpenCL REQUIRED)" >> $file 
+   	echo "include_directories(${OpenCL_INCLUDE_DIRS})" >> $file 
+   	echo "link_directories(${OpenCL_LIBRARY})" >> $file 
+   	echo "add_executable ($exc_name main.cpp)" >> $file 
+   	echo "target_include_directories ($exc_name PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})" >> $file
+   	echo "target_link_libraries ($exc_name ${OpenCL_LIBRARY})" >> $file
 	
 fi  
 

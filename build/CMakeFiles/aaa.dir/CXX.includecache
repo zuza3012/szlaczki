@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/barklis/Dokumenty/IT/Programowanie/C++/OpenCL/szlaczki/main.cpp
+iostream
+-
+CL/cl2.hpp
+-
+
