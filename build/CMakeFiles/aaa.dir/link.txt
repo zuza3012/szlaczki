@@ -1,1 +1,1 @@
-/usr/bin/c++   -std=c++0x   CMakeFiles/aaa.dir/main.cpp.o  -o aaa -rdynamic 
+/usr/bin/c++   -std=c++0x   CMakeFiles/aaa.dir/main.cpp.o  -o aaa  -L/usr/lib/x86_64-linux-gnu/libOpenCL.so -rdynamic -lOpenCL -Wl,-rpath,/usr/lib/x86_64-linux-gnu/libOpenCL.so 

@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++0x
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/barklis/Dokumenty/IT/Programowanie/C++/OpenCL/szlaczki 
 

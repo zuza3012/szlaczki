@@ -90,6 +90,7 @@ aaa_EXTERNAL_OBJECTS =
 
 aaa: CMakeFiles/aaa.dir/main.cpp.o
 aaa: CMakeFiles/aaa.dir/build.make
+aaa: /usr/lib/x86_64-linux-gnu/libOpenCL.so
 aaa: CMakeFiles/aaa.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/barklis/Dokumenty/IT/Programowanie/C++/OpenCL/szlaczki/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable aaa"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aaa.dir/link.txt --verbose=$(VERBOSE)

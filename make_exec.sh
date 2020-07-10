@@ -23,14 +23,14 @@ else
 	echo "#Minimal OpenCL CMakeLists.txt by StreamHPC" > $file
 	echo "cmake_minimum_required (VERSION 3.1)" >> $file
 	echo "project($project_name)" >> $file
-	echo "set(CMAKE_CXX_FLAGS "-std=c++0x")" >> $file 	
+	echo "set(CMAKE_CXX_FLAGS \"-std=c++0x\")" >> $file 	
 	# Handle OpenCL
 	echo "find_package(OpenCL REQUIRED)" >> $file 
-   	echo "include_directories(${OpenCL_INCLUDE_DIRS})" >> $file 
-   	echo "link_directories(${OpenCL_LIBRARY})" >> $file 
+   	echo 'include_directories(${OpenCL_INCLUDE_DIRS})' >> $file 
+   	echo 'link_directories(${OpenCL_LIBRARY})' >> $file 
    	echo "add_executable ($exc_name main.cpp)" >> $file 
-   	echo "target_include_directories ($exc_name PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})" >> $file
-   	echo "target_link_libraries ($exc_name ${OpenCL_LIBRARY})" >> $file
+   	echo "target_include_directories ($exc_name PUBLIC \${CMAKE_CURRENT_SOURCE_DIR})" >> $file
+   	echo "target_link_libraries ($exc_name \${OpenCL_LIBRARY})" >> $file
 	
 fi  
 
