@@ -114,7 +114,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=testy
+CMAKE_PROJECT_NAME:STATIC=test
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -172,10 +172,10 @@ OpenCL_INCLUDE_DIR:PATH=/usr/include
 OpenCL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libOpenCL.so
 
 //Value Computed by CMake
-testy_BINARY_DIR:STATIC=/home/barklis/Dokumenty/IT/Programowanie/C++/OpenCL/szlaczki/build
+test_BINARY_DIR:STATIC=/home/barklis/Dokumenty/IT/Programowanie/C++/OpenCL/szlaczki/build
 
 //Value Computed by CMake
-testy_SOURCE_DIR:STATIC=/home/barklis/Dokumenty/IT/Programowanie/C++/OpenCL/szlaczki
+test_SOURCE_DIR:STATIC=/home/barklis/Dokumenty/IT/Programowanie/C++/OpenCL/szlaczki
 
 
 ########################

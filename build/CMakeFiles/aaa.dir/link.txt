@@ -1,1 +1,1 @@
-/usr/bin/c++      CMakeFiles/aaa.dir/main.cpp.o  -o aaa -rdynamic 
+/usr/bin/c++   -std=c++0x   CMakeFiles/aaa.dir/main.cpp.o  -o aaa -rdynamic 
